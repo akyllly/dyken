@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Medigo</title>
-    <link rel="stylesheet" href="{{ URL::asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{secure_asset('css/style.css') }}">
 
     <!-- <link rel="stylesheet/less" type="text/css" href="/resources/css/style.css"/> -->
     <script src="jquery-3.5.1.min.js"></script>
