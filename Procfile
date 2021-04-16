@@ -1,0 +1,1 @@
+web: vendor/bin/dyken-php-apache2 public/
