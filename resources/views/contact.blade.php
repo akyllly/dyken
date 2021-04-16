@@ -3,7 +3,7 @@
 
 <head>
     <title>Contact</title>
-    <link rel="stylesheet" href="{{ URL::asset('css/contactcss.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/contactcss.css') }}">
     <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=64316aaf-b67c-443d-9e5f-1dae3a2414d8
