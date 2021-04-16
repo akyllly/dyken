@@ -1,0 +1,250 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+p{
+    margin: 0 0 20px 0;
+}
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+header{
+    background-color: rgb(50, 55, 59);
+}
+.topbar{
+    width: 100%;
+    height: 40px;
+    list-style: none;
+    display: flex;
+}
+.topbar li{
+    margin-left: 20px;
+    padding-top: 0.5em;
+    
+}
+.topbar a{
+    text-transform: uppercase;
+    font-family: 'Josefin Sans';
+    text-decoration: none;
+    color:gray;
+}
+.topbar li a:hover{
+    color: white;
+}
+.medigo{
+    color: rgb(0, 168, 213);
+    
+}
+.medigo a{
+    text-decoration: none;
+    color: rgb(0, 168, 213);
+}
+.menu{
+    width: 100%;
+    height: 80px;
+}.menu_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
+    font-family: 'Josefin Sans';
+}.medigo{
+    color: rgb(0, 168, 213);
+}
+.dropdown {
+    float: center;
+    overflow: hidden;
+}.dropdown .dropbtn {
+    font-size: 13px;  
+    border: none;
+    outline: none;
+    color: black;
+    padding: 30px 20px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 10%;
+  }
+  .dropdown-content a {
+    float: none;
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    padding: 25px 20px;
+    font-size: 12px;
+  } 
+  .dropdown:hover .dropdown-content {
+    display: block;
+}
+.nav_list{
+    display: flex;
+    list-style: none;
+}
+.nav_list li{
+    margin-left: 40px;
+}
+.nav_list li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 13px;
+    color: black;
+    position: relative;
+}
+.nav_list li a::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    color: black;
+    transition: 0.3s ease;
+}
+.nav_list li a:hover{
+   color: rgb(0, 168, 213);
+}
+.overview{
+    height: 182px;
+    background-image: url(/promo/promo1.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: 4px solid black;
+    padding-top: 70px;
+    
+}
+.overview_set{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.overview_title{
+    font-size: 32px;
+    color: white;
+    font-family:'Josefin Sans';
+}
+.overview_menu{
+    float: right;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 3px;
+    padding: 13px 4px 0px 4px;
+    font-size: 20px;
+    font-family:'Josefin Sans';
+}
+.blog_main{
+    display:inline-block;
+    margin-top: 80px;
+}
+.recent{
+    width: 66.66%;
+    float: left;
+}
+.recent_post{
+    margin-bottom: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.recent_date{
+    color: #aaaaaa;
+    font-size: 16px;
+    margin-top: 15px;
+}
+.recent img{
+    width: 100%;
+}
+.recent h3{
+    margin: 10px 0 25px 0;
+    font-size: 24px;
+    font-family: "Raleway", sans-serif;
+    color: #31373a;
+    line-height: 30px;
+    font-weight: 600;
+}
+.recent h3 a{
+    text-decoration: none;
+    color: #31373a;
+}
+.recent h3 a:hover{
+    color: rgb(0, 168, 213);
+}
+.recent_summary{
+    color: #aaaaaa;
+    font-family: "PT Serif", Georgia, serif;
+}
+.recent_text{
+    color: #777777;
+    font-family: "PT Serif", Georgia, serif;
+}
+.recent_text a {
+    color: rgb(0, 168, 213);
+    text-decoration: none;
+}
+.sidebar{
+    width: 33.33%;
+    float: right;
+}
+.sidebar_main{
+    display: inline-block;
+}
+.sidebar_img{
+    float: left;
+    margin-right: 15px;
+    
+}
+.sidebar_content{
+    width: 100%;
+    font-family: "Raleway", sans-serif;
+}
+.sidebar_content a{
+    text-decoration: none;
+    color: #31373a;
+}
+.sidebar_content a:hover{
+    color: rgb(0, 168, 213);
+}
+.sidebar_post{
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #dce4e6;
+}
+.sidebar_main h5{
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+}
+footer{
+    height: 220px;
+    color: rgb(97, 108, 126);
+    background-color: #f1f4f5;
+}
+.end{
+    text-align: center;
+    
+ }
+.menu_link{
+    font-family: 'Josefin Sans';
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+.nav_footer li a:hover{
+    color: rgb(0, 168, 213);
+ }
+.end li {
+    display: inline-block;
+    margin: 90px 10px 0px 10px;
+    vertical-align: top;
+}
+.copy{
+    text-align: center;
+    margin-top: 50px;
+}
