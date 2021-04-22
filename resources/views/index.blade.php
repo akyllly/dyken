@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Medigo</title>
-    <link rel="stylesheet" href="{{secure_asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('css/style.css') }}">
 
     <!-- <link rel="stylesheet/less" type="text/css" href="/resources/css/style.css"/> -->
     <script src="jquery-3.5.1.min.js"></script>
@@ -21,8 +21,8 @@
     <header>
         <div class="container">
             <ul class="topbar">
-                <li><a href=""><i class="fa fa-globe" style='font-size:20px'></i> {{ __("EN")}}</a></li>
-                <li><a href=""><i class="fa fa-fw fa-user" style='font-size:20px'></i> {{ __("My account")}}</a></li>
+                <li><a href="http://localhost/dyken/public/ru"><i class="fa fa-globe" style='font-size:20px'></i> {{ __("EN")}}</a></li>
+                <li><a href="http://localhost/dyken/public/home"><i class="fa fa-fw fa-user" style='font-size:20px'></i> {{ __("My account")}}</a></li>
                 <li><a href=""><i class='fa fa-shopping-cart' style='font-size:20px'></i> {{ __("My cart")}}</a></li>
             </ul>
         </div>
@@ -40,8 +40,6 @@
                             <a href="http://localhost/dyken/public/mice">{{ __("Mice")}}</a>
                             <hr>
                             <a href="http://localhost/dyken/public/keyboard">{{ __("Keyboards")}}</a>
-                            <hr>
-                            <a href="http://localhost/dyken/public/headsets">{{ __("Headsets")}}</a>
                         </div>
                         </div> </li>
                     <li><a class="dropbtn" href="http://localhost/dyken/public/blog">{{ __("Blog")}}</li>
@@ -112,16 +110,16 @@
             <div class="portfolio_subtitle">{{ __("Everything you need to be a professional.")}}</div>
         </div>
         <div class="portfolio_img">
-            <a href="https://www.logitech.com/assets/64386/wireless-mouse-m510.png" target="_blank"><img class="portfolio_vitrina"  src="/Week10/portfolio/1.jpg"></a>
-            <a href="https://templatemo.com/tm-532-next-level" target="_blank"><img class="portfolio_vitrina"  src="/Week10/portfolio/2.jpg" alt=""></a>
-            <a href="https://templatemo.com/tm-557-grad-school" target="_blank"><img class="portfolio_vitrina"  src="/Week10/portfolio/5.jpg" alt=""></a>
-            <a href="https://templatemo.com/tm-555-upright" target="_blank"><img class="portfolio_vitrina"  src="/Week10/portfolio/8.jpg" alt=""></a>
+            <a href="" target="_blank"><img class="portfolio_vitrina"  src="https://resource.logitechg.com/e_trim/w_490,h_310,c_limit/c_lpad,ar_413:310,q_auto:best,f_auto,dpr_auto/content/dam/products/gaming/mice/g403-prodigy-wired-gaming-mouse/910-004825/g403-prodigy-gaming-mouse15.png?v=1"></a>
+            <a href="" target="_blank"><img class="portfolio_vitrina"  src="https://resource.logitechg.com/e_trim/w_490,h_310,c_limit/c_lpad,ar_413:310,q_auto:best,f_auto,dpr_auto/content/dam/gaming/en/products/g903/g903-gallery-1.png?v=1" alt=""></a>
+            <a href="" target="_blank"><img class="portfolio_vitrina"  src="https://resource.logitechg.com/e_trim/w_490,h_310,c_limit/c_lpad,ar_413:310,q_auto:best,f_auto,dpr_auto/content/dam/gaming/en/products/g305/g305-gallery-1.png?v=1" alt=""></a>
+            <a href="" target="_blank"><img class="portfolio_vitrina"  src="https://resource.logitechg.com/e_trim/w_490,h_310,c_limit/c_lpad,ar_413:310,q_auto:best,f_auto,dpr_auto/content/dam/gaming/en/products/g703/g703-gallery-1.png?v=1" alt=""></a>
         </div>
     </div>
     <div class="quotation">
         <div class="container">
-            <div id="quotation_title">-Thomas Teddy-Design Writer</div>
-            <p id="quotation_text">I love the logo. Particularly how the mark can stand on its own. Nice work! It feels tall and proud and powerful.</p>
+            <div id="quotation_title">{{__("-Thomas Teddy-Design Writer")}}</div>
+            <p id="quotation_text">{{("I love the logo. Particularly how the mark can stand on its own. Nice work! It feels tall and proud and powerful.")}}</p>
             <div class="radio">
                 <input id = "q1" class="form-check-input"type="radio" name="radiobutton" value="A" onClick="quot()">
                 <input id = "q2" class="form-check-input"type="radio" name="radiobutton" value="A" checked onclick="quot()">

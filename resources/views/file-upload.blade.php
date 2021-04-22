@@ -23,7 +23,7 @@
 
     <div class="container mt-5">
         <form action="{{route('fileUpload')}}" method="post" enctype="multipart/form-data">
-          <h3 class="text-center mb-5">Upload File in Laravel</h3>
+          <h3 class="text-center mb-5">Upload your resume here</h3>
             @csrf
             @if ($message = Session::get('success'))
             <div class="alert alert-success">
@@ -49,6 +49,16 @@
             <button type="submit" name="submit" class="btn btn-primary btn-block mt-4">
                 Upload Files
             </button>
+
+            
+        </form>
+        <form action="http://localhost/dyken/public/en">
+            <input type="submit" value="Go to main page" style="background-color: rgb(0, 168, 213);border: none;
+                color: white;
+                padding: 16px 32px;
+                text-decoration: none;
+                margin: 4px 2px;
+                cursor: pointer;"/>
         </form>
     </div>
 

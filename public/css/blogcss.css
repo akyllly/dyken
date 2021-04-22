@@ -3,7 +3,7 @@
     margin: 0px;
     padding: 0px;
 }
-p{
+body p{
     margin: 0 0 20px 0;
 }
 .container{
@@ -32,15 +32,7 @@ header{
 }
 .topbar li a:hover{
     color: white;
-}
-.medigo{
-    color: rgb(0, 168, 213);
-    
-}
-.medigo a{
-    text-decoration: none;
-    color: rgb(0, 168, 213);
-}
+ }
 .menu{
     width: 100%;
     height: 80px;
@@ -51,6 +43,10 @@ header{
     padding: 30px 20px;
     font-family: 'Josefin Sans';
 }.medigo{
+    color: rgb(0, 168, 213);
+}
+.medigo a{
+    text-decoration: none;
     color: rgb(0, 168, 213);
 }
 .dropdown {
@@ -112,19 +108,16 @@ header{
 }
 .overview{
     height: 182px;
-    background-image: url(/promo/promo1.jpeg);
+    background-image:url(https://images.pexels.com/photos/160107/pexels-photo-160107.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
     border: 4px solid black;
     padding-top: 70px;
-    
 }
 .overview_set{
     display: flex;
     justify-content: space-between;
-    padding-left: 25px;
-    padding-right: 25px;
 }
 .overview_title{
     font-size: 32px;

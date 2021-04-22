@@ -3,7 +3,7 @@
 
 <head>
     <title>Contact</title>
-    <link rel="stylesheet" href="{{ secure_asset('css/contactcss.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('css/contactcss.css') }}">
     <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=64316aaf-b67c-443d-9e5f-1dae3a2414d8
@@ -15,8 +15,8 @@
     <header>
         <div class="container">
             <ul class="topbar">
-                <li><a href=""><i class="fa fa-globe" style='font-size:20px'></i> {{ __("EN")}}</a></li>
-                <li><a href=""><i class="fa fa-fw fa-user" style='font-size:20px'></i> {{ __("My account")}}</a></li>
+                <li><a href="http://localhost/dyken/public/contact/ru"><i class="fa fa-globe" style='font-size:20px'></i> {{ __("EN")}}</a></li>
+                <li><a href="http://localhost/dyken/public/home"><i class="fa fa-fw fa-user" style='font-size:20px'></i> {{ __("My account")}}</a></li>
                 <li><a href=""><i class='fa fa-shopping-cart' style='font-size:20px'></i> {{ __("My cart")}}</a></li>
             </ul>
         </div>
@@ -35,8 +35,6 @@
                                 <a href="http://localhost/dyken/public/mice">{{ __("Mice")}}</a>
                                 <hr>
                                 <a href="http://localhost/dyken/public/keyboard">{{ __("Keyboards")}}</a>
-                                <hr>
-                                <a href="http://localhost/dyken/public/headsets">{{ __("Headsets")}}</a>
                             </div>
                         </div>
                     </li>
@@ -51,38 +49,38 @@
         <div class="container">
             <div class="overview_set">
                 <div class="overview_title">
-                    <h2>Contact</h2>
+                    <h2>{{__("Contact")}}</h2>
                 </div>
-                <div class="overview_menu">Home/Contact</div>
+                <div class="overview_menu">{{__("Home/Contact")}}</div>
             </div>
         </div>
     </div>
     <div class="question">
         <div class="container">
-            <h2 class="question_subtitle">Our addresses</h2>
+            <h2 class="question_subtitle">{{__("Our addresses")}}</h2>
             <div class="address">
-                <div class="address_title">Central office of the branch</div>
+                <div class="address_title">{{__("Central office of the branch")}}</div>
                 <div class="address_content">
-                    <div class="address_text"><i class="fa fa-map-marker" aria-hidden="true" style="color: rgb(0, 168, 213);"></i> г. Алматы, ул. Макатаева, 117 (корпус "А"), уг. ул. Масанчи, Бизнес-центр "Lotos"</div>
-                    <div class="address_text"><i class="fa fa-clock-o" aria-hidden="true" style="color: rgb(0, 168, 213);"></i> ежедневно с 10:00 до 19:00 (без обеденного перерыва)</div>
+                    <div class="address_text"><i class="fa fa-map-marker" aria-hidden="true" style="color: rgb(0, 168, 213);"></i> г. Алматы, {{__("117 Makataeva str. (building 'A'), Masanchi str., Lotos Business Center")}}</div>
+                    <div class="address_text"><i class="fa fa-clock-o" aria-hidden="true" style="color: rgb(0, 168, 213);"></i> {{__("daily from 10: 00 to 19: 00 (without lunch break)")}}</div>
                     <div class="address_text"><i class="fa fa-phone" aria-hidden="true" style="color: rgb(0, 168, 213);"></i> +7 (777) 777-77-77</div>
                     <div class="address_text"><i class="fa fa-at" aria-hidden="true" style="color: rgb(0, 168, 213);"></i> dyken@gmail.com</div>
                 </div>
             </div>
             <div class="address">
-                <div class="address_title">Central office of the branch</div>
+                <div class="address_title">{{__("Central office of the branch")}}</div>
                 <div class="address_content">
-                    <div class="address_text"><i class="fa fa-map-marker" aria-hidden="true" style="color: rgb(0, 168, 213);"></i> г. Астана, ул. Макатаева, 117 (корпус "А"), уг. ул. Масанчи, Бизнес-центр "Lotos"</div>
-                    <div class="address_text"><i class="fa fa-clock-o" aria-hidden="true" style="color: rgb(0, 168, 213);"></i> ежедневно с 10:00 до 19:00 (без обеденного перерыва)</div>
+                    <div class="address_text"><i class="fa fa-map-marker" aria-hidden="true" style="color: rgb(0, 168, 213);"></i> г. Астана, {{__("117 Makataeva str. (building 'A'), Masanchi str., Lotos Business Center")}}</div>
+                    <div class="address_text"><i class="fa fa-clock-o" aria-hidden="true" style="color: rgb(0, 168, 213);"></i> {{("daily from 10: 00 to 19: 00 (without lunch break)")}}</div>
                     <div class="address_text"><i class="fa fa-phone" aria-hidden="true" style="color: rgb(0, 168, 213);"></i> +7 (777) 666-66-66</div>
                     <div class="address_text"><i class="fa fa-at" aria-hidden="true" style="color: rgb(0, 168, 213);"></i> dyken@gmail.com</div>
                 </div>
             </div>
             <div class="address">
-                <div class="address_title">Central office</div>
+                <div class="address_title">{{__("Central office")}}</div>
                 <div class="address_content">
-                    <div class="address_text"><i class="fa fa-map-marker" aria-hidden="true" style="color: rgb(0, 168, 213);"></i> г. Караганда, ул. Макатаева, 117 (корпус "А"), уг. ул. Масанчи, Бизнес-центр "Lotos"</div>
-                    <div class="address_text"><i class="fa fa-clock-o" aria-hidden="true" style="color: rgb(0, 168, 213);"></i> ежедневно с 10:00 до 19:00 (без обеденного перерыва)</div>
+                    <div class="address_text"><i class="fa fa-map-marker" aria-hidden="true" style="color: rgb(0, 168, 213);"></i> {{__("г. Караганда,")}} {{__("117 Makataeva str. (building 'A'), Masanchi str., Lotos Business Center")}}</div>
+                    <div class="address_text"><i class="fa fa-clock-o" aria-hidden="true" style="color: rgb(0, 168, 213);"></i> {{("daily from 10: 00 to 19: 00 (without lunch break)")}}</div>
                     <div class="address_text"><i class="fa fa-phone" aria-hidden="true" style="color: rgb(0, 168, 213);"></i> +7 (777) 555-55-55</div>
                     <div class="address_text"><i class="fa fa-at" aria-hidden="true" style="color: rgb(0, 168, 213);"></i> dyken@gmail.com</div>
                 </div>
@@ -271,7 +269,7 @@
                 Job openings
             </div>
             <div class="vacancy_subtitle">Job in LLP "DYKEN"</div>
-            <div class="vacancy_main"><b>Нашим сотрудникам мы предлагаем:</b> </div>
+            <div class="vacancy_main"><b>{{__("To our employees, we offer:")}}</b> </div>
             <ul>
                 <li><b>Конкурентноспособную заработную плату и социальный пакет.</b> Уровень оплаты в нашей компании позволяет уверенно планировать своё будущее.</li>
                 <li><b>Профессиональное развитие.</b> Работа в нашей команде позволяет постоянно совершенствовать профессиональные и личностные качества, а привлечение и участие в развивающих программах наших партнёров обеспечивает повышение квалификации всех сотрудников компании.</li>
@@ -280,31 +278,11 @@
                 <li><b>Дружный и сплоченный коллектив.</b> Мы готовы стать настоящим вторым домом, в который всегда приятно возвращаться после каждых выходных.</li>
                 <li><b>Корпоративные праздники и спортивные мероприятия.</b> Наша компания поддерживает и поощряет спортивную активность сотрудников, регулярно проводятся корпоративные праздники.</li>
             </ul>
+            <form action="http://localhost/dyken/public/upload-file">
+                <input type="submit" value="Upload my Resume" height="200px" />
+            </form>
         </div>
     </div>
-    <!-- <div class="container">
-        @if (count($errors)>0)
-        <div class="alert alert-danger">
-            <ul>
-                @foreach ($errors->all() as $error)
-                <li>{{ $error }}</li>
-                @endforeach
-            </ul>
-        </div>
-        @endif
-        <form action="http://localhost/dyken/public/multiuploads" method="post" enctype="multipart/form-data">
-            {{csrf_field()}}
-            <div class="form-group">
-                <label for="Enter email">Email:</label>
-                <input type="text" name="email" class="form-control" placeholder="Enter email">
-            </div>
-            <label for="Enter email">Resume</label>
-            <br />
-            <input type="file" class="form-control" name="docs[]" multiple />
-            <br /><br />
-            <input type="submit" class="btn btn-primary" value="Upload" />
-        </form>
-    </div> -->
     <footer>
         <div class="container">
             <nav class="end">
